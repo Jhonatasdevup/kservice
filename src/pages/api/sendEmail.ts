@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 
   if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Método não permitido' });
+    return res.status(405).json({ message: 'Método 2não permitido' });
   }
 
   const { nome, whatsapp, email, endereco, problema } = req.body;
