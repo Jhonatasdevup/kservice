@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 export default function Service() {
   const data = [
     {
-      img: '/secadora.png',
+      img: '/Secadora.png',
       title: 'Secadora',
     },
     {

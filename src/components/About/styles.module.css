@@ -35,6 +35,7 @@
   
   @media (max-width: 768px) {
     .aboutSection {
+      width: 768px;
       padding: 3rem 1rem;
     }
   
@@ -58,6 +59,7 @@
   @media (max-width: 480px) {
     .aboutSection {
       padding: 2rem 1rem;
+      width: 420px;
     }
   
     .title {

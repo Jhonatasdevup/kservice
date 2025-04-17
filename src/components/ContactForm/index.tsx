@@ -2,8 +2,10 @@
 
 import React, { useState } from "react";
 import styles from "./styles.module.css";
+import CircularProgress from '@mui/material/CircularProgress';
 
 export default function ContactForm() {
+  const [loading, setLoading ] = useState(false)
   const [formData, setFormData] = useState({
     nome: "",
     whatsapp: "",
@@ -32,6 +34,7 @@ export default function ContactForm() {
   
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    setLoading(true)
     e.preventDefault();
     if (!formData.termos) {
       alert("Você precisa aceitar os termos da LGPD.");
@@ -50,6 +53,7 @@ export default function ContactForm() {
   
       if (response.ok) {
         alert("Formulário enviado com sucesso!");
+        setLoading(false)
         setFormData({
           nome: "",
           whatsapp: "",
@@ -146,10 +150,18 @@ export default function ContactForm() {
         Aceito os termos e condições conforme a Lei Geral de Proteção de Dados (LGPD) e nossa <a href="/PoliticadePrivacidade">Política de Privacidade</a>
         </p>
       </label>
-
-      <button type="submit" className={styles.button}>
+    {loading? 
+        <div style={{width:"100%", display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <CircularProgress color="success" />
+        </div>
+        :
+        <button type="submit" className={styles.button}>
         Enviar Solicitação
       </button>
+  }
+
+
+
     </form>
     </section>
   );
