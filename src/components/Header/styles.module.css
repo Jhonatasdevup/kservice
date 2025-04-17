@@ -1,0 +1,110 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 1292px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.nav ul li {
+  position: relative;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.nav ul li a{
+  text-decoration: none;
+  text-decoration-line: none;
+  color: #333;
+}
+
+.nav ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #001f3f;
+  transition: width 0.3s ease;
+}
+
+.nav ul li:hover::after {
+  width: 100%;
+}
+
+.social {
+  display: flex;
+}
+
+.menuIcon {
+  display: none;
+  cursor: pointer;
+  color: #001f3f;
+}
+
+/* Responsivo */
+@media (max-width: 1292px) {
+  .header {
+    width: 100%;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .social {
+    display: none;
+  }
+}

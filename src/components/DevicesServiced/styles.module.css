@@ -1,0 +1,106 @@
+.section {
+  background: linear-gradient(90deg, rgba(15, 40, 58, 1) 0%, rgba(3, 64, 107, 1) 100%);
+  margin: 80px auto;
+  padding: 50px 20px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fffbfb;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+.highlight {
+  color: #f8505e;
+  font-weight: bold;
+}
+
+.divServiceMain {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.divService {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  width: 260px;
+  max-width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.divService:hover {
+  transform: translateY(-5px);
+}
+
+.img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.titleService {
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 500;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .divService {
+    width: 220px;
+    padding: 16px;
+  }
+
+  .img {
+    width: 70px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+  .section {
+    padding: 40px 15px;
+    max-width: 360px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .divService {
+    width: 100%;
+  }
+
+  .img {
+    width: 60px;
+  }
+
+  .titleService {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,83 @@
+.container {
+  max-width: 1292px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #001f3f;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.icon {
+  color: #0F283A;
+  font-size: larger;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVO */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .grid {
+    gap: 30px;
+    width: 360px;
+  }
+
+  .card {
+    width: 240px;
+  }
+
+  .card p {
+    font-size: 17px;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+}
