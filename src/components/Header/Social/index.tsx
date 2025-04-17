@@ -14,7 +14,7 @@ export default function SocialIcons() {
         </a>
       </li>
       <li className={styles.icon}>
-      <a href="mailto:kserviceadm2021@gmail.com">
+      <a href="mailto:kservicecontato.adm@gmail.com">
         <MailOutlineIcon className={styles.email} />
       </a>
       </li>

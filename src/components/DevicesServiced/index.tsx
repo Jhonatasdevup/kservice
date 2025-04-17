@@ -42,8 +42,8 @@ export default function Service() {
       <h1 className={styles.title}>
         Consertamos seus eletrodomésticos com{' '}
         <span className={styles.highlight}>rapidez</span>,{' '}
-        <span className={styles.highlight}>garantia</span> e total{' '}
-        <span className={styles.highlight}>confiança</span>!
+        <span className={styles.highlight}>garantia</span> e total {' '}
+        <span className={styles.highlight}> confiança</span>.
       </h1>
       <div className={styles.divServiceMain}>
         {data.map((val, i) => (

@@ -9,7 +9,7 @@ export default function PoliticaDePrivacidade() {
       <h1 className={styles.h1}>Política de Privacidade</h1>
 
       <p className={styles.p}>
-        A sua privacidade é importante para nós. É política do KSERVICE Assistência Técnica respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site KSERVICE Assistência Técnica, e outros sites que possuímos e operamos.
+        A sua privacidade é importante para nós. É política da KSERVICE Assistência Técnica respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site KSERVICE Assistência Técnica, e outros sites que possuímos e operamos.
       </p>
 
       <p className={styles.p}>

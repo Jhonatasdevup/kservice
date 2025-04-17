@@ -10,13 +10,13 @@ export default function About() {
         <h2 className={styles.title}>Nossa história</h2>
 
         <p className={styles.subtitle}>
-          Especialistas no conserto de eletrodomésticos da linha branca: geladeiras, máquinas de lavar, lava e seca e muito mais.
+          Desde 2021 atendendo com qualidade.
         </p>
 
         <p className={styles.text}>
-          Desde 2021, atendendo com qualidade em São Paulo e Grande SP.
+        Especialistas no conserto de eletrodomésticos da linha branca: geladeiras, máquinas de lavar, lava e seca e muito mais.
         </p>
-
+        
         <p className={styles.text}>
           Contamos com técnicos altamente qualificados, com cursos atualizados em todas as marcas do mercado.
         </p>
@@ -26,7 +26,7 @@ export default function About() {
         </p>
 
         <p className={styles.finalCall}>
-          Entre em contato e conte com a gente para cuidar do seu eletrodoméstico!
+          Entre em contato e conte com a gente para cuidar do seu eletrodoméstico.
         </p>
       </Container>
     </section>

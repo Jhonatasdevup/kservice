@@ -48,7 +48,7 @@ export default function Footer() {
             </li>
             <li>
               <MailOutlineIcon fontSize="small" />
-              kserviceadm2021@gmail.com
+              kservicecontato.adm@gmail.com
             </li>
             <li>
               <LocationOnIcon fontSize="small" /> São Paulo - SP
