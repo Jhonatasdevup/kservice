@@ -3,8 +3,10 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import CircularProgress from '@mui/material/CircularProgress';
+import { useRouter } from 'next/navigation';
 
 export default function ContactForm() {
+  const router = useRouter()
   const [loading, setLoading ] = useState(false)
   const [formData, setFormData] = useState({
     nome: "",
@@ -62,7 +64,7 @@ export default function ContactForm() {
           problema: "",
           termos: false,
         });
-        
+        router.push('/ContatoEnviado');
       } else {
         
         alert("Erro ao enviar solicitação.");
