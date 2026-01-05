@@ -8,7 +8,7 @@ export default function Success() {
         <h1 className={styles.title}>Mensagem enviada com sucesso!</h1>
         <p className={styles.text}>Obrigado por entrar em contato com a KSERVICE. Em breve responderemos sua mensagem.</p>
         <Link href="/" passHref>
-          <button className={styles.button}>Voltar para a página inicial</button>
+          <button className={styles.button}>Click Aqui Para Voltar para a página inicial</button>
         </Link>
       </div>
     </div>
