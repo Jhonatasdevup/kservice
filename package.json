@@ -13,18 +13,10 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.6",
     "@mui/material": "^7.3.6",
-<<<<<<< HEAD
     "next": "16.1.1",
     "nodemailer": "^7.0.12",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-=======
-    "next": "^16.1.1",
-    "nodemailer": "^7.0.12",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "react-hook-form": "^7.70.0",
->>>>>>> origin/chore/upgrade-deps
     "swiper": "^12.0.3"
   },
   "devDependencies": {
